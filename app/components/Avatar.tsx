@@ -2,6 +2,7 @@
 
 import { User } from "@prisma/client"
 import Image from "next/image";
+import { LuUser2 } from "react-icons/lu";
 
 
 interface AvatarProps {
@@ -15,7 +16,7 @@ const Avatar: React.FC<AvatarProps> = ({ user }) => {
             <div
                 className="relative inline-block rounded-full overflow-hidden h-9 w-9 md:h-11 md:w-11"
             >
-                <Image 
+                <Image
                     alt="Avatar"
                     src={user?.image || '/images/placeholder-profile.jpg'}
                     fill
