@@ -23,7 +23,7 @@ const UserList: React.FC<UserListProps> = ({ items }) => {
                     <div
                         className="text-2xl font-bold text-neutral-800 py-4"
                     >
-                        People
+                        Users
                     </div>
                 </div>
 
