@@ -6,12 +6,28 @@ import clsx from "clsx";
 import { useSession } from "next-auth/react";
 import { format } from "date-fns";
 import Image from "next/image";
+import localFont from '@next/font/local';
 
 
 interface MessageBoxProps {
     data: FullMessageType;
     isLast?: boolean;
 }
+
+
+// const vazir = localFont({
+//     src: [
+//         {
+//             path: './Vazir-Medium.ttf',
+//             weight: '400'
+//         },
+//         {
+//             path: './Vazir-Bold.ttf',
+//             weight: '700'
+//         }
+//     ],
+//     variable: '--font-vazir'
+// });
 
 
 const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
@@ -49,17 +65,17 @@ const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
             <div className={avatar}>
                 <Avatar user={data.sender} />
             </div>
-            
+
             <div className={body}>
                 <div
                     className="flex items-center gap-1"
                 >
                     <div
-                    className="text-sm text-gray-500"
+                        className="text-sm text-gray-500"
                     >
                         {data.sender.name}
                     </div>
-                    
+
                     <div className="text-xs text-gray-400">
                         {format(new Date(data.createdAt), 'p')}
                     </div>
@@ -67,7 +83,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
 
                 <div className={message}>
                     {data.image ? (
-                        <Image 
+                        <Image
                             alt="Image"
                             height='288'
                             width='288'
@@ -75,7 +91,7 @@ const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
                             className="object-cover cursor-pointer hover:scale-110 transition translate"
                         />
                     ) : (
-                        <div>{data.body}</div>
+                        <div className='___body-messages'>{data.body}</div>
                     )}
                 </div>
                 {isLast && isOwn && seenList.length > 0 && (
