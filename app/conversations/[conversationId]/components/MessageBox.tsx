@@ -6,28 +6,12 @@ import clsx from "clsx";
 import { useSession } from "next-auth/react";
 import { format } from "date-fns";
 import Image from "next/image";
-import localFont from '@next/font/local';
 
 
 interface MessageBoxProps {
     data: FullMessageType;
     isLast?: boolean;
 }
-
-
-// const vazir = localFont({
-//     src: [
-//         {
-//             path: './Vazir-Medium.ttf',
-//             weight: '400'
-//         },
-//         {
-//             path: './Vazir-Bold.ttf',
-//             weight: '700'
-//         }
-//     ],
-//     variable: '--font-vazir'
-// });
 
 
 const MessageBox: React.FC<MessageBoxProps> = ({ data, isLast }) => {
