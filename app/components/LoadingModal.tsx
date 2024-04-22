@@ -1,7 +1,12 @@
 'use client'
 
+// ** React
 import React, { Fragment } from 'react';
+
+// ** Headless UI
 import { Dialog, Transition } from '@headlessui/react';
+
+// ** React Spinners
 import { ClipLoader } from 'react-spinners';
 
 

@@ -1,13 +1,28 @@
 'use client'
 
+// ** Components
 import Button from "@/app/components/Button";
 import Modal from "@/app/components/Modal";
+
+// ** Hooks
 import useConversation from "@/app/hooks/useConversation";
+
+// ** Headless UI
 import { Dialog } from "@headlessui/react";
+
+// ** Axios
 import axios from "axios";
+
+// ** Next
 import { useRouter } from "next/navigation";
+
+// ** React
 import { useCallback, useState } from "react";
+
+// ** Toast
 import toast from "react-hot-toast";
+
+// ** Icons
 import { FiAlertTriangle } from 'react-icons/fi'
 
 
@@ -73,7 +88,7 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
             </div>
 
             <div
-                className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse"
+                className="mt-5 flex flex-row-reverse justify-center sm:mt-4 sm:justify-start"
             >
                 <Button
                     disabled={isLoading}

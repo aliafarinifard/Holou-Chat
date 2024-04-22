@@ -1,8 +1,12 @@
 'use client'
 
+// ** Prisma
 import { User } from "@prisma/client"
+
+// ** Next
 import Image from "next/image";
-import { LuUser2 } from "react-icons/lu";
+
+// ** Hooks
 import useActiveList from "../hooks/useActiveList";
 
 

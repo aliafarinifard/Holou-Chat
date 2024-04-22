@@ -1,7 +1,12 @@
 'use client';
 
+// ** CLSX
 import clsx from "clsx";
+
+// ** Hooks
 import useConversation from "../hooks/useConversation";
+
+// ** Components
 import EmptyState from "../components/EmptyState";
 
 

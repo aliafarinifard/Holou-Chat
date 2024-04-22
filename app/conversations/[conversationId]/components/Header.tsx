@@ -1,14 +1,25 @@
 'use client'
 
+// ** Components
 import Avatar from "@/app/components/Avatar"
-import useOtherUser from "@/app/hooks/useOtherUser"
-import { Conversation, User } from "@prisma/client"
-import Link from "next/link"
-import { useMemo, useState } from "react"
-import { HiChevronLeft, HiEllipsisHorizontal } from "react-icons/hi2"
 import ProfileDrawer from "./ProfileDrawer"
 import AvatarGroup from "@/app/components/AvatarGroup"
+
+// ** Hooks
+import useOtherUser from "@/app/hooks/useOtherUser"
 import useActiveList from "@/app/hooks/useActiveList"
+
+// ** Prisma
+import { Conversation, User } from "@prisma/client"
+
+// ** Next
+import Link from "next/link"
+
+// ** React
+import { useMemo, useState } from "react"
+
+// ** Icons
+import { HiChevronLeft, HiEllipsisHorizontal } from "react-icons/hi2"
 
 
 interface HeaderProps {
@@ -47,7 +58,7 @@ const Header: React.FC<HeaderProps> = ({ conversation }) => {
                     className="flex gap-3 items-center"
                 >
                     <Link
-                        href={'/conversation'}
+                        href={'/conversations'}
                         className="lg:hidden block text-sky-500 hover:text-sky-600 transition cursor-pointer"
                     >
                         <HiChevronLeft size={32} />

@@ -1,18 +1,20 @@
 'use client'
 
 
+// ** React
 import { Fragment, useMemo, useState } from "react";
 
 // ** Hooks
 import useOtherUser from "@/app/hooks/useOtherUser";
+import useActiveList from "@/app/hooks/useActiveList";
 
 // ** Prisma
 import { Conversation, User } from "@prisma/client";
 
-// ** date-fns
+// ** Date-Fns
 import { format } from 'date-fns';
 
-// ** headlessui
+// ** Headless UI
 import { Dialog, Transition } from '@headlessui/react';
 
 // ** Icons
@@ -22,7 +24,6 @@ import { IoClose, IoTrash } from 'react-icons/io5';
 import Avatar from "@/app/components/Avatar";
 import ConfirmModal from "./ConfirmModal";
 import AvatarGroup from "@/app/components/AvatarGroup";
-import useActiveList from "@/app/hooks/useActiveList";
 
 
 interface ProfileDrawerProps {

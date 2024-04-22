@@ -1,8 +1,9 @@
 'use client'
 
+// ** React
 import { Fragment } from "react";
 
-// ** headlessui
+// ** Headless UI
 import { Dialog, Transition } from "@headlessui/react";
 
 // ** Icons

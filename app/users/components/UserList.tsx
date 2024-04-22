@@ -1,6 +1,9 @@
 'use client'
 
+// ** Prisma
 import { User } from "@prisma/client"
+
+// ** Components
 import UserBox from "./UserBox";
 
 

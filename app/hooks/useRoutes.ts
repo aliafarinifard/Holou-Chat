@@ -1,7 +1,16 @@
+// ** Next
 import { usePathname } from "next/navigation";
+
+// ** React
 import { useMemo } from "react";
+
+// ** Next
 import { signOut } from "next-auth/react";
+
+// ** Actions
 import useConversation from "./useConversation";
+
+// ** Icons
 import { HiChat } from "react-icons/hi";
 import {
     HiArrowLeftOnRectangle,

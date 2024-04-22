@@ -1,13 +1,25 @@
 'use client'
 
+// ** React
 import { useCallback, useMemo } from "react";
+
+// ** Next
 import { useRouter } from "next/navigation";
-import { Conversation, Message, User } from "@prisma/client";
-import clsx from "clsx";
-import { format } from 'date-fns';
 import { useSession } from "next-auth/react";
+
+// ** CLSX
+import clsx from "clsx";
+
+// ** Date-Fns
+import { format } from 'date-fns';
+
+// ** Types
 import { FullConversationType } from "@/app/types";
+
+// ** Hooks
 import useOtherUser from "@/app/hooks/useOtherUser";
+
+// ** Components
 import Avatar from "@/app/components/Avatar";
 import AvatarGroup from "@/app/components/AvatarGroup";
 

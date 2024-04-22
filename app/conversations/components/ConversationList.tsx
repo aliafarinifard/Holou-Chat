@@ -1,16 +1,35 @@
 'use client'
 
+// ** Hooks
 import useConversation from "@/app/hooks/useConversation";
+
+// ** Types
 import { FullConversationType } from "@/app/types";
+
+// ** CLSX
 import clsx from "clsx";
+
+// ** Next
 import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
+
+// ** React
 import { useEffect, useMemo, useState } from "react";
+
+// ** Icons
 import { MdOutlineGroupAdd } from "react-icons/md";
+
+// ** Components
 import ConversationBox from "./ConversationBox";
 import GroupChatModal from "./GroupChatModal";
+
+// ** Prisma
 import { User } from "@prisma/client";
-import { useSession } from "next-auth/react";
+
+// ** Pusher
 import { pusherClient } from "@/app/libs/pusher";
+
+// ** Lodash
 import { find } from "lodash";
 
 

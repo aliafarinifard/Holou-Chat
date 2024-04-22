@@ -1,5 +1,7 @@
 'use client'
 
+import clsx from "clsx";
+// ** React Hook Form
 import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
 
 
@@ -21,6 +23,10 @@ const MessageInput: React.FC<MessageInputProps> = ({
     register,
     errors
 }) => {
+
+    const RTL = 'text-right';
+    const LTR = 'text-left';
+
     return (
         <div
             className="relative w-full"
@@ -31,7 +37,7 @@ const MessageInput: React.FC<MessageInputProps> = ({
                 autoComplete={id}
                 placeholder={placeholder}
                 {...register(id, { required })}
-                className="text-black font-light py-2 px-4 bg-neutral-100 w-full rounded-full focus:outline-none ___message-input"
+                className="text-black font-light py-2 px-4 bg-neutral-100 w-full rounded-full  focus:outline-none ___inputs"
             />
         </div>
     )

@@ -1,6 +1,13 @@
+// ** Next
 import { useSession } from "next-auth/react";
+
+// ** React
 import { useMemo } from "react";
+
+// ** Types
 import { FullConversationType } from "../types";
+
+// ** Prisma
 import { User } from '@prisma/client';
 
 

@@ -1,5 +1,8 @@
+// ** Actions
 import getConversations from "../actions/getConversations";
 import getUsers from "../actions/getUsers";
+
+// ** Components
 import Sidebar from "../components/sidebar/Sidebar";
 import ConversationList from "./components/ConversationList";
 

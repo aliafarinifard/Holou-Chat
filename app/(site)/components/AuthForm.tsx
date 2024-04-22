@@ -1,13 +1,26 @@
 'use client'
 
+// ** Components
 import Button from "@/app/components/Button";
 import Input from "@/app/components/inputs/Input";
-import { useCallback, useEffect, useState } from "react"
-import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import AuthSocialButton from "./AuthSocialButton";
+
+// ** React
+import { useCallback, useEffect, useState } from "react"
+
+// ** React Hook Form
+import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+
+// ** Icons
 import { BsGithub, BsGoogle } from "react-icons/bs";
+
+// ** Axios
 import axios from "axios";
+
+// ** Toast
 import toast from "react-hot-toast";
+
+// ** Next
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 

@@ -1,6 +1,9 @@
 'use client'
 
+// ** CLSX
 import clsx from 'clsx'
+
+// ** React Hook Form
 import {
     FieldErrors,
     FieldValues,
@@ -62,7 +65,8 @@ const Input: React.FC<InputProps> = ({
                         focus:ring-inset
                         focus:ring-sky-600
                         sm:text-sm
-                        sm:leading-6`,
+                        sm:leading-6
+                        ___inputs`,
                         errors[id] && "focus:ring-rose-500",
                         disabled && "opacity-50 cursor-default"
                     )}

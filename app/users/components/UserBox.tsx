@@ -1,10 +1,19 @@
 'use client'
 
+// ** Components
 import Avatar from "@/app/components/Avatar";
 import LoadingModal from "@/app/components/LoadingModal";
-import { User } from "@prisma/client"
+
+// ** Prisma
+import { User } from "@prisma/client";
+
+// ** Axios
 import axios from "axios";
+
+// ** Next
 import { useRouter } from "next/navigation";
+
+// ** React
 import { useCallback, useState } from "react";
 
 

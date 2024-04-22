@@ -1,6 +1,10 @@
+// ** Bcrypt
 import bcrypt from 'bcrypt';
 
+// ** PrismaDB
 import prisma from '@/app/libs/prismadb';
+
+// ** Next
 import { NextResponse } from 'next/server';
 
 

@@ -1,15 +1,30 @@
 'use client'
 
+// ** Prisma
 import { User } from "@prisma/client";
+
+// ** Axios
 import axios from "axios";
+
+// ** Next
 import { useRouter } from "next/navigation";
+import Image from "next/image";
+
+// *=> Next Cloudinary
+import { CldUploadButton } from "next-cloudinary";
+
+// ** React
 import { useState } from "react";
+
+// ** React Hook Form
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+
+// ** Toast
 import toast from "react-hot-toast";
+
+// ** Components
 import Modal from "../Modal";
 import Input from "../inputs/Input";
-import Image from "next/image";
-import { CldUploadButton } from "next-cloudinary";
 import Button from "../Button";
 
 
@@ -37,7 +52,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
         formState: {
             errors
         }
-    } = useForm({
+    } = useForm<FieldValues>({
         defaultValues: {
             name: currentUser?.name,
             image: currentUser?.image

@@ -1,6 +1,13 @@
+// ** PrismaDB
 import prisma from '@/app/libs/prismadb';
+
+// ** Actions
 import getCurrentUser from "@/app/actions/getCurrentUser";
+
+// ** Next
 import { NextResponse } from "next/server";
+
+// ** Pusher
 import { pusherServer } from '@/app/libs/pusher';
 
 interface IParams {

@@ -1,5 +1,4 @@
-// 'use client'
-
+// ** Components
 import EmptyState from "../components/EmptyState";
 
 const Users = () => {

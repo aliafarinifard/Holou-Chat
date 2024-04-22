@@ -1,10 +1,10 @@
-// ** Next Responsive
+// ** Next
 import { NextResponse } from "next/server";
 
 // ** Actions
 import getCurrentUser from "@/app/actions/getCurrentUser";
 
-// ** Prisma
+// ** PrismaDB
 import prisma from '@/app/libs/prismadb';
 
 

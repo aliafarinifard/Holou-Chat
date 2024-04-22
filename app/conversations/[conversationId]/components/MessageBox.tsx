@@ -1,13 +1,24 @@
 'use client'
 
+// ** Components
 import Avatar from "@/app/components/Avatar";
-import { FullMessageType } from "@/app/types"
-import clsx from "clsx";
-import { useSession } from "next-auth/react";
-import { format } from "date-fns";
-import Image from "next/image";
-import { useState } from "react";
 import ImageModal from "./ImageModal";
+
+// ** Types
+import { FullMessageType } from "@/app/types";
+
+// ** CLSX
+import clsx from "clsx";
+
+// ** Next
+import { useSession } from "next-auth/react";
+import Image from "next/image";
+
+// ** Date-Fns
+import { format } from "date-fns";
+
+// ** React
+import { useState } from "react";
 
 
 interface MessageBoxProps {

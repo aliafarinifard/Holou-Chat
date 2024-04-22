@@ -1,14 +1,25 @@
 'use client'
 
+// ** Hooks
 import useConversation from '@/app/hooks/useConversation';
+
+// ** Axios
 import axios from 'axios';
+
+// ** React Hook Form
 import {
     FieldValues,
     SubmitHandler,
     useForm
 } from 'react-hook-form';
+
+// ** Icons
 import { HiPaperAirplane, HiPhoto } from 'react-icons/hi2';
+
+// ** Components
 import MessageInput from './MessageInput';
+
+// ** Next Cloudinary
 import { CldUploadButton } from 'next-cloudinary';
 
 
